@@ -12,22 +12,3 @@ PETUGAS ->	-Data My_Profile
 
 
 
-================================================================================================
-
-Page Super Admin
-
-
-tolong bantu saya
-saya memiliki modul A yang tekoneksi database, dengan nama tabel (1) dan memiliki jumlah coulumn 8
-
-jika saya membuat modul B dan ingin saya koneksikan ke database dengan nama tabel (1) dan hanya ingin mengambil 3 column.
-apakah metode itu bisa??
-
-bisakah saya membuat modul verifikasi pada pemograman php?
-contohnya jika admin A ingin mengubah data harus ada persetujuan dari admin B sebagai atasan
-ketika admin B melakukan persetujuan, data bertambah atau update di database.
-
-apakah itu mungkin???
-
-
-
