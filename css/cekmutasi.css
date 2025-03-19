@@ -1,0 +1,33 @@
+    /* Styling untuk profile card */
+    .profile-container {
+        width: 80%; /* Mengatur lebar card */
+        max-width: 800px; /* Menentukan lebar maksimum card */
+        margin: 0 auto; /* Margin auto untuk pusatkan secara horizontal */
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    table th, table td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    /* Memusatkan teks pada <h2> */
+    h2 {
+        text-align: center; /* Menyusun teks ke tengah */
+        margin-bottom: 20px; /* Memberikan jarak bawah pada judul */
+    }

@@ -1,0 +1,89 @@
+/* Style untuk Kartu Status Operator */
+.profile-card {
+    background-color: #ffffff; /* Warna latar abu-abu */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.profile-image {
+    background-color: #b0b0b0; /* Placeholder background */
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-bottom: 15px;
+    object-fit: cover; /* Placeholder untuk gambar */
+}
+
+.profile-details h2.name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.profile-details p {
+    font-size: 0.9em;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Layout Responsif */
+@media (max-width: 768px) {
+    .profile-card {
+        margin: 10px auto;
+        width: 90%;
+    }
+}
+
+/* Default style for status-badge */
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: fit-content;
+}
+
+/* Warna berdasarkan status */
+.status-green {
+    background-color: green; /* Hijau untuk Aktif */
+}
+
+.status-gray {
+    background-color: gray; /* Abu-abu untuk Non Aktif */
+}
+
+.status-yellow {
+    background-color: yellow; /* Kuning untuk SP */
+    color: black; /* Teks warna hitam agar lebih terbaca */
+}
+
+.status-red {
+    background-color: red; /* Merah untuk Blacklist */
+}
+
+.status-blue {
+    background-color: blue; /* Biru untuk Mutasi */
+}
+
+.status-orange {
+    background-color: orange; /* Oranye untuk Skorsing */
+    color: black; /* Teks warna hitam agar lebih terbaca */
+}
+
+/* Default jika status tidak dikenali */
+.status-default {
+    background-color: black;
+    color: white;
+}
+

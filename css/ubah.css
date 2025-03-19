@@ -1,0 +1,52 @@
+/* Pembatasan lebar kontainer form */
+.page-wrapper {
+    max-width: 1200px; /* Atur lebar maksimum untuk memastikan halaman tidak terlalu lebar */
+    margin: 0 auto; /* Menjaga form agar selalu terpusat */
+    padding: 20px;
+}
+
+/* Menggunakan Flexbox untuk meratakan form foto */
+.form-photo-container {
+    display: flex;
+    flex-wrap: wrap; /* Membuat foto bisa diatur dalam beberapa baris jika perlu */
+    justify-content: space-between; /* Memberikan jarak antar elemen */
+    gap: 20px; /* Memberikan jarak antar foto */
+    text-align: center; /* Memastikan gambar dan elemen berada di tengah */
+}
+
+/* Setiap elemen foto */
+.form-photo-item {
+    flex: 1 1 calc(33.333% - 20px); /* Membuat setiap elemen foto lebar 1/3 dari kontainer */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Memberikan jarak antar baris */
+    padding: 10px; /* Memberikan sedikit padding di sekitar elemen */
+    border: 1px solid #ddd; /* Membuat pembatas antara foto */
+    border-radius: 8px; /* Sudut pembatas yang lebih lembut */
+    background-color: #f9f9f9; /* Memberikan latar belakang sedikit abu-abu */
+}
+
+/* Label dan gambar di dalam elemen foto */
+.form-photo-item label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-photo-item img {
+    display: block;
+    margin: 0 auto 8px auto; /* Memastikan gambar terpusat di dalam elemen */
+    max-width: 100%; /* Gambar tidak akan melebihi lebar elemen */
+    height: auto; /* Menjaga proporsi gambar */
+}
+
+/* Menyesuaikan input file */
+.form-photo-item input[type="file"] {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%; /* Membuat lebar input file penuh */
+}
+
+/* Menambahkan gaya pada teks kecil di bawah input */
+.form-photo-item small {
+    display: block;
+    color: #6c757d;
+}

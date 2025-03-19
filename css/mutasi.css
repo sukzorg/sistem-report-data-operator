@@ -1,0 +1,88 @@
+
+/* CSS untuk layout dua kolom */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-container, .profile-container {
+    width: 48%; /* Membagi ruang menjadi 2 bagian */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pastikan tidak mengubah pengaturan footer */
+footer {
+  color: black;
+  font-size: 15px;
+  position: relative; /* Pastikan footer tetap berada di bawah */
+  z-index: 1; /* Jaga agar footer tetap di atas konten jika diperlukan */
+}
+
+footer .footer-below {
+  padding: 20px 0;
+  background-color: #A9ABAE;
+  position: relative; /* Menjaga posisi footer tetap berada di bawah konten */
+  z-index: 1;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+/* Styling untuk profile table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
